@@ -44,6 +44,15 @@ return [
             ],
         ],
         */
+
+        'filestorage'	=>  [
+            'telegram' => [
+                'class' => \sem\telegram\TelegramBot::className(),
+                'apiKey' => '<уникальный_api_ключ>',
+                'botName' => '<имя_бота>',
+                'webhook' => 'https://<url_адрес_хука>'
+            ]
+        ],
     ],
     'params' => $params,
 ];
